@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <!-- Menu -->
+        <div class="wrapper">
+            <nav>
+                <div class="items">
+                    <span class="item active"  data-name="all">Todos</span>
+                    <span class="item" data-name="duelista">Duelistas</span>
+                    <span class="item" data-name="iniciador">Iniciadores</span>
+                    <span class="item" data-name="sentinela">Sentinelas</span>
+                    <span class="item" data-name="controlador">Controlador</span>
+
+                    <div class="toggle">
+                        <input id="switch" type="checkbox" name="theme">
+                        <label id="alternar" for="switch"><p>Light/Dark</p></label>
+                    </div>
+
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+
+  
+
+    <form class="pesquisa">
+         
+        <input type="submit" id="btn-search" onclick="searchThings()">
+        <input  type="text" onkeyup="searchThings()" type="text" name="search" id="searchbar" placeholder="Nome do personagem">
+    </form>
+ 
+
+<!-- Filtro de imagens -->
+    <main>
+        
+        
+        <div class="gallery">
+            <div class="image" data-name="controlador"><span><img src="img/astra.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Astra</h3>
+                        <div class="audioButton">
+                            <audio src="audio/astra.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="iniciador"><span><img src="img/breach.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Breach</h3>
+                        <div class="audioButton">
+                            <audio src="audio/breach.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="controlador"><span><img src="img/brim.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Brimstone</h3>
+                        <div class="audioButton">
+                            <audio src="audio/brimstone.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="sentinela"><span><img src="img/chamber.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Chamber</h3>
+                        <div class="audioButton">
+                            <audio src="audio/chamber.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="sentinela"><span><img src="img/cypher.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Cypher</h3>
+                        <div class="audioButton">
+                            <audio src="audio/cypher.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="iniciador"><span><img src="img/fade.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Fade</h3>
+                        <div class="audioButton">
+                            <audio src="audio/fade.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/jett.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Jett</h3>
+                        <div class="audioButton">
+                            <audio src="audio/jett.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="iniciador"><span><img src="img/kayo.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Kayo</h3>
+                        <div class="audioButton">
+                            <audio src="audio/kayo.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="sentinela"><span><img src="img/kj.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Killjoy</h3>
+                        <div class="audioButton">
+                            <audio src="audio/kj.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/neon.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Neon</h3>
+                        <div class="audioButton">
+                            <audio src="audio/neon.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="controlador"><span><img src="img/omen.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Omen</h3>
+                        <div class="audioButton">
+                            <audio src="audio/omen.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/phoenix.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Phoenix</h3>
+                        <div class="audioButton">
+                            <audio src="audio/phoenix.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/raze.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Raze</h3>
+                        <div class="audioButton">
+                            <audio src="audio/raze.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/reyna.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Reyna</h3>
+                        <div class="audioButton">
+                            <audio src="audio/reyna.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="iniciador"><span><img src="img/skye.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Skye</h3>
+                        <div class="audioButton">
+                            <audio src="audio/skye.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="sentinela"><span><img src="img/sage.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Sage</h3>
+                        <div class="audioButton">
+                            <audio src="audio/sage.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="iniciador"><span><img src="img/sova.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Sova</h3>
+                        <div class="audioButton">
+                            <audio src="audio/sova.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="controlador"><span><img src="img/viper.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Viper</h3>
+                        <div class="audioButton">
+                            <audio src="audio/viper.mpeg"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+            <div class="image" data-name="duelista"><span><img src="img/yoru.png" alt=""></span>
+                <div class="titulo">
+                    <h3>Yoru</h3>
+                        <div class="audioButton">
+                            <audio src="audio/allAgents.mp3"></audio>
+                            <button class="ult-sound">ULT</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
