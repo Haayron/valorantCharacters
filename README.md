@@ -1,4 +1,4 @@
-#<a href="https://haayron.github.io/valorantCharacters/">Valorant Characters</a>
+<h1 href="https://haayron.github.io/valorantCharacters/">Valorant Characters</h1>
 
 Esse é um site baseado no jogo Valorant. 
 
